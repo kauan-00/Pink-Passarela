@@ -7,8 +7,109 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/*CONFIGURAÇÃO DAS LETRAS*/
+
+:root {
+  font-size: 16px;
+}
+
+@font-face {
+  font-family: 'Wonder';
+  src: url(../FONTS/WONDER\ SEASON.otf) format(opentype), url(../FONTS/WONDER\ SEASON.ttf) format(truetype);
+}
+
+h1 {
+  font-family: 'Wonder', serif;
+}
+
+
+h2 {
+  font-family: 'Wonder', serif;
+  margin-top: 69px;
+  text-align: center;
+  font-size: 50px;
+  color: #1a1a1a;
+  margin-bottom: 25px;
+}
+
+h3 {
+  font-family: 'Wonder', serif;
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+}
+
+.logo-text {
+  font-family: 'Wonder', serif;
+  color: rgb(255, 255, 255);
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-family: 'Wonder', serif;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  position: relative;
+  bottom: 07px;
+}
+
+h5 {
+  font-family: 'Wonder', serif;
+  font-size: 28px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.logo {
+  display: none;
+}
+
+@media screen and (max-width:1024px) {
+  h5 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  .logo-text {
+    display: none;
+  }
+
+  .logo {
+    display: inline;
+  }
+
+
+
+}
+
+
+@media screen and (max-width:490px) {
+  h2 {
+    font-size: 30px;
+  }
+
+  h4 {
+    padding-top: 5px;
+    font-size: 25px;
+  }
+
+  h5 {
+    display: none;
+    margin: 10px 0 15px 0;
+  }
+}
+
+.description-pijama-text {
+  font-family: 'Wonder', serif;
+  font-size: 40px;
+}
+
 body {
   background: #fff6fa;
+  overflow-x: hidden;
 }
 
 header {
@@ -92,23 +193,19 @@ header {
 
     .nav-list {
       position: absolute;
-      top: 95px;
+      top: 97px;
       left: 0;
       width: 50vw;
-      height: 92vh;
-      background: #FEFEFE;
+      height: 50vh;
+      background: #fff6fa;
       flex-direction: column;
       transform: translateX(-100%);
+      border-radius: 5px;
     }
     .nav-list li {
       padding: 10px;
       margin-left: 0;
       opacity: 0;
-    }
-
-    a:hover {
-        color: #FEFEFE;
-        background-color: #FF227F;
     }
 
     .mobile-menu {
@@ -272,11 +369,16 @@ input:focus {
   font-weight: 300;
 }
 
+/*Ínicio do cabeçalho*/
+
+#body-main-categories {
+  margin-bottom: 70px;
+}
+
 footer {
   display: grid;
   column-gap: 25px;
   grid-template-columns: 1fr 1fr 1fr;
-  margin-top: 69px;
   width: 100%;
   background: #FF227F;
   padding: 15px 30px;
@@ -347,8 +449,6 @@ footer {
       margin-top: 15px;
     }
 }
-
-
 
 section {
   display: grid;
@@ -531,4 +631,34 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+
+.sobre-main {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  column-gap: 25px;
+  padding: 5px 25px;
+  margin-bottom: 100px;
+}
+
+.texto-apresenta {
+  text-align: justify;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+  .sobre-main {
+    display: block;
+    padding: 20px 10px;
+  }
+
+  .texto-apresenta {
+    font-size: 10px;
+  }
+
+  aside {
+    padding-top: 35px;
+  }
+  
 }

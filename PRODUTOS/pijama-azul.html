@@ -22,9 +22,9 @@
                     <div class="line3"></div>
                 </div>
                 <ul class="nav-list">
-                    <li><a href="index.html" class="link-menu">Home</a></li>
-                    <li><a href="sobre.html" class="link-menu">Sobre</a></li>
-                    <li><a href="contatos.html" class="link-menu">Contato</a></li>
+                    <li><a href="../index.html" class="link-menu">Home</a></li>
+                    <li><a href="../sobre.html" class="link-menu">Sobre</a></li>
+                    <li><a href="../contatos.html" class="link-menu">Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -42,6 +42,8 @@
 
     </header>
 
+    <div class="space-fixed"></div>
+
     <main class="principal-produto">
         <section class="foto-side">
             <div class="guide">
@@ -55,8 +57,10 @@
         <section class="text-side">
 
             <div class="produto-name">
-                <p class="text-produto">Pijama Femino Estampado <br><span class="text-envio">Vendido e Entregue por
-                        <span style="color: #FF227F;">Passarela Pink</span></span></p>
+                <p class="text-produto">Pijama Femino Estampado <br>
+                    <span class="text-envio">Vendido e Entregue por
+                        <span style="color: #FF227F;">Passarela Pink</span></span>
+                </p>
 
                 <!-- Uso de CSS e Javascript embutido no ícone-->
                 <i class='bx bx-heart bx-flip-horizontal'
@@ -73,26 +77,61 @@
 
                 <div class="aviso">
                     <i class='bx bx-error' style="color: rgb(170, 51, 51); font-size: 30px;"></i>
-                    <p style="color: rgb(114, 34, 34); font-size: 0.6rem;">As estampas presentes nas peças podem sofrer
+                    <p style="color: rgb(114, 34, 34); font-size: 0.6rem; margin-left: 15px;">As estampas presentes nas
+                        peças podem sofrer
                         variações, tendo sua distribuição sortida.</p>
                 </div>
 
-                <p style="font-size: 0.8rem;">Cor: Multicolorida</p>
+                <p style="font-size: 0.8rem;">Cor: Azul</p>
                 <div class="color-box"></div>
 
-            </div>
+                <p style="font-size: 0.8rem;">Tamanho: </p>
+                <ul style="display: flex;">
+                    <li class="size-outfit">P</li>
+                    <li class="size-outfit">M</li>
+                    <li class="size-outfit">G</li>
+                </ul>
 
-            
+                <div>
+                    <button class="add-button">ADICIONAR AO CARRINHO</button>
+                    <button class="buy-button">COMPRAR AGORA</button>
+                </div>
+
+                <div class="calcular-cep">
+                    <p>Frete:</p>
+                    <input class="input-cep" type="text" placeholder="00000-000" oninput="formatarInput (this)">
+                    <input class="input-cep" type="submit" value="CALCULE">
+                </div>
 
 
         </section>
     </main>
 
     <footer>
-
+        <div class="space-footer1">
+            <img src="../IMAGES/genérico/logo.png" alt="Logotipo da Passarela Pink" width="90px">
+            <h4 style="text-align: center;">PASSARELA PINK</h4>
+        </div>
+        <div class="desktop-direction">
+            <h5 style="text-align: center;">ENTRE EM CONTATO</h5>
+            <p class="footer-desc"><span style="color: white; padding: 0 8px;">WhatsApp:</span>11 93205-7021</p>
+            <p class="footer-desc"><span style="color: white; padding: 0 8px;">Localidade:</span>Avenida Lico Maia (493)
+                -
+                Diadema - SP</p>
+        </div>
+        <div class="footer-image">
+            <img src="../IMAGES/genérico/Footer-Image.png"
+                alt="Imagem ilustratica para o rodapé do site da Passarela Pink" width="190px">
+        </div>
     </footer>
 
     <script src="../SCRIPTS/mobile-nav.js"></script>
+    <script>
+        function formatarInput(input) {
+            input.value = input.value.replace(/  0-9]/g, '');
+            input.value = input.value.replace(/(\d{5})(\d)/g, '$1-$2');
+        }
+    </script>
 </body>
 
 </html>

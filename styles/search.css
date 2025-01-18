@@ -100,4 +100,56 @@ input:focus {
       grid-template-columns: 4% 96%;
     }
   }
+
+  
+
+
+.vitrine {
+    margin: 4%;
+    margin-top: 6%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.produto {
+    width: calc(25% - 20px);
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+
+.preco {
+    font-weight: bold;
+    color: #e75480;
+    margin-bottom: 10px;
+}
+
+.produto:hover {
+    opacity: 1.2;
+    scale: 1.1;
+  }
+
+@media (max-width: 768px) {
+    .vitrine {
+        flex-direction: column;
+    }
+
+    .produto {
+        width: 100%;
+    }
+}
+
+.link-produtos {
+    color: #000;
+}
   
